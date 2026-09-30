@@ -101,19 +101,19 @@ export type Testimonial = { title: string; kind: string; video: string; poster: 
 export const testimonials: readonly Testimonial[] = [
   {
     title: "Comgelo & Bill Baterias", kind: "Depoimento",
-    video: "/assets/depoimentos/comgelo-bill.mp4", poster: "/assets/depoimentos/comgelo-bill.webp",
+    video: "/assets/depoimentos/comgelo-bill.mp4?v=1", poster: "/assets/depoimentos/comgelo-bill.webp",
   },
   {
     title: "Kariri Com K", kind: "Depoimento",
-    video: "/assets/depoimentos/kariri-com-k.mp4", poster: "/assets/depoimentos/kariri-com-k.webp",
+    video: "/assets/depoimentos/kariri-com-k.mp4?v=1", poster: "/assets/depoimentos/kariri-com-k.webp",
   },
   {
     title: "Yolanda Gifoni", kind: "Depoimento",
-    video: "/assets/depoimentos/yolanda-gifoni.mp4", poster: "/assets/depoimentos/yolanda-gifoni.webp",
+    video: "/assets/depoimentos/yolanda-gifoni.mp4?v=1", poster: "/assets/depoimentos/yolanda-gifoni.webp",
   },
   {
     title: "Kariri Com K", kind: "Feedback",
-    video: "/assets/depoimentos/kariri-com-k-feedback.mp4", poster: "/assets/depoimentos/kariri-com-k-feedback.webp",
+    video: "/assets/depoimentos/kariri-com-k-feedback.mp4?v=1", poster: "/assets/depoimentos/kariri-com-k-feedback.webp",
   },
 ] as const;
 export const journeyParagraphs = [
