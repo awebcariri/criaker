@@ -4,11 +4,11 @@ export const REVIEWS_URL = "https://share.google/hIJnLf6iqNp5hjBEE";
 
 export const services = [
   { icon: "target", title: "Planejamento Estratégico", video: "/assets/Diretoria.mp4", videoMobile: "/assets/mobile/Diretoria.mp4", poster: "/assets/video-covers/Diretoria.webp" },
-  { icon: "rocket", title: "Criação & Branding", video: "/assets/Designer_grafico.mp4", videoMobile: "/assets/mobile/Designer_grafico.mp4", poster: "/assets/video-covers/Designer_grafico.webp" },
-  { icon: "video", title: "Produção de Vídeos", video: "/assets/Videomaker.mp4", videoMobile: "/assets/mobile/Videomaker.mp4", poster: "/assets/video-covers/Videomaker.webp" },
-  { icon: "calendar", title: "Gestão de Eventos", video: "/assets/Gestao_de_Eventos.mp4", videoMobile: "/assets/mobile/Gestao_de_Eventos.mp4", poster: "/assets/video-covers/Gestao_de_Eventos.webp" },
-  { icon: "award", title: "Performance Digital", video: "/assets/Analista_de_Marketing.mp4", videoMobile: "/assets/mobile/Analista_de_Marketing.mp4", poster: "/assets/video-covers/Analista_de_Marketing.webp" },
-  { icon: "mic", title: "Ações de Impacto", video: "/assets/Acoes_de_Impacto.mp4", videoMobile: "/assets/mobile/Acoes_de_Impacto.mp4", poster: "/assets/video-covers/Acoes_de_Impacto.webp" },
+  { icon: "rocket", title: "Criação & Branding", video: "/assets/video-covers/Designer Gráfico.MOV", videoMobile: "/assets/video-covers/Designer Gráfico.MOV", poster: "/assets/video-covers/Designer_grafico.webp" },
+  { icon: "video", title: "Produção de Vídeos", video: "/assets/video-covers/Videomaker.MOV", videoMobile: "/assets/video-covers/Videomaker.MOV", poster: "/assets/video-covers/Videomaker.webp" },
+  { icon: "calendar", title: "Gestão de Eventos", video: "/assets/video-covers/Gestão de Eventos.MOV", videoMobile: "/assets/video-covers/Gestão de Eventos.MOV", poster: "/assets/video-covers/Gestao_de_Eventos.webp" },
+  { icon: "award", title: "Performance Digital", video: "/assets/video-covers/Performance Digital.MOV", videoMobile: "/assets/video-covers/Performance Digital.MOV", poster: "/assets/video-covers/Analista_de_Marketing.webp" },
+  { icon: "mic", title: "Ações de Impacto", video: "/assets/Acoes_de_Impacto.mp4", videoMobile: "/assets/mobile/Acoes_de_Impacto.mp4", poster: "/assets/video-covers/Acoes_de_Impacto.jpg" },
 ] as const;
 
 export type Client = { name: string; since: number; logo: string; description: string; instagram?: string };

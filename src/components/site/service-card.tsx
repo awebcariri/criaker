@@ -9,7 +9,6 @@ export function ServiceCard({ service }: { service: (typeof services)[number] })
   const videoRef = useRef<HTMLVideoElement>(null);
   const [near, setNear] = useState(false);
   const [active, setActive] = useState(false);
-  const [playing, setPlaying] = useState(false);
   const [lightSource, setLightSource] = useState(true);
   const Icon = icons[service.icon];
 
@@ -39,12 +38,9 @@ export function ServiceCard({ service }: { service: (typeof services)[number] })
     if (!video) return;
     if (!active) {
       video.pause();
-      setPlaying(false);
       return;
     }
-
-    video.load();
-    video.play().catch(() => setPlaying(false));
+    video.play().catch(() => {});
   }, [active, near]);
 
   return (
@@ -52,19 +48,15 @@ export function ServiceCard({ service }: { service: (typeof services)[number] })
       <div ref={containerRef} className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border bg-card sm:aspect-[3/4]">
         <video
           ref={videoRef}
+          autoPlay
           muted
           loop
           playsInline
-          preload="none"
           poster={service.poster}
           className="size-full bg-card object-cover"
-          onPlay={() => setPlaying(true)}
-          onPause={() => setPlaying(false)}
           aria-label={`Vídeo: ${service.title}`}
-          data-playing={playing}
-        >
-          {near && <source src={lightSource ? service.videoMobile : service.video} type="video/mp4" />}
-        </video>
+          src={lightSource ? service.videoMobile : service.video}
+        />
       </div>
       <div className="mt-4 flex items-center gap-3 px-1">
         {Icon && <Icon aria-hidden="true" className="size-5 shrink-0 text-primary" />}
