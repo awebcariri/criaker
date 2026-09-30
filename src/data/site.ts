@@ -75,24 +75,24 @@ export const team: readonly TeamMember[] = [
     name: "Társila Santana", role: "CEO & Diretora de Marketing",
     quote: "Onde existe um desafio, encontro uma oportunidade de posicionamento.",
     bio: "À frente da estratégia da CriAker, transforma problemas de negócio em direcionamentos claros, estratégias inteligentes e oportunidades de crescimento. É quem conecta visão, mercado, comportamento e comunicação para descobrir não apenas o que uma marca deve fazer, mas por que, como e para quem fazer.",
-    image: "/assets/tarsila-santana-full.webp", imageSmall: "/assets/tarsila-santana-480.webp",
+    image: "/assets/tarsila-santana-novo.jpg", imageSmall: "/assets/tarsila-santana-novo.jpg",
   },
   {
     name: "Rita Soares", role: "CEO & Diretora de Comunicação",
     quote: "Porque toda marca tem algo a dizer. O nosso trabalho é fazer as pessoas quererem ouvir.",
     bio: "À frente da comunicação da CriAker, cuida para que cada marca tenha personalidade, presença e uma voz própria. É quem transforma conceitos em narrativas, campanhas e experiências capazes de despertar atenção e criar conexão, fazendo com que a comunicação deixe de ser apenas vista e passe a ser executada.",
-    image: "/assets/rita-soares-full.webp", imageSmall: "/assets/rita-soares-480.webp",
+    image: "/assets/rita-soares-novo.jpg", imageSmall: "/assets/rita-soares-novo.jpg",
   },
-  { name: "Theresa Pedrosa", role: "Analista de Marketing", quote: "É quem mergulha no negócio para entender onde a marca está, onde precisa chegar e o que precisa ser feito para chegar lá.", bio: "Conecta estratégia, conteúdo, campanhas e resultados, organizando as ideias e transformando desafios em caminhos claros para a marca crescer e se posicionar.", image: "/assets/theresa-pedrosa-full.webp", imageSmall: "/assets/theresa-pedrosa-480.webp" },
+  { name: "Theresa Pedrosa", role: "Analista de Marketing", quote: "É quem mergulha no negócio para entender onde a marca está, onde precisa chegar e o que precisa ser feito para chegar lá.", bio: "Conecta estratégia, conteúdo, campanhas e resultados, organizando as ideias e transformando desafios em caminhos claros para a marca crescer e se posicionar.", image: "/assets/theresa-pedrosa-novo.jpg", imageSmall: "/assets/theresa-pedrosa-novo.jpg" },
   {
     name: "Italo Marcel", role: "Designer Gráfico", quote: "Quem transforma estratégia em imagem.",
     bio: "É quem dá forma visual às ideias da marca. Cria peças que comunicam, despertam interesse e fortalecem o posicionamento, cuidando para que cada detalhe tenha intenção e faça a marca ser reconhecida, lembrada e percebida da maneira certa.",
-    image: "/assets/italo-marcel-full.webp", imageSmall: "/assets/italo-marcel-480.webp",
+    image: "/assets/italo-marcel-novo.jpg", imageSmall: "/assets/italo-marcel-novo.jpg",
   },
   {
     name: "Igo Maceno", role: "Videomaker Mobile", quote: "Quem transforma ideias em conteúdo que prende o olhar.",
     bio: "É quem coloca a estratégia em movimento. Capta, dirige e edita vídeos pensados para chamar atenção, transmitir a essência da marca e criar conexão com o público. Porque não basta gravar bonito, cada take precisa ter um propósito.",
-    image: "/assets/igo-maceno-full.webp", imageSmall: "/assets/igo-maceno-480.webp",
+    image: "/assets/igo-maceno-novo.jpg", imageSmall: "/assets/igo-maceno-novo.jpg",
   },
 ] as const;
 
