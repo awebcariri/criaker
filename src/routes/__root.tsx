@@ -86,8 +86,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "author", content: "CriAker" },
       { property: "og:title", content: "CriAker | Agência Líder em Posicionamento de Marcas" },
       { property: "og:description", content: "Agência líder há 7 anos em posicionar marcas. Criação, Estratégia e Resultados. Planejamento, Vídeos e Eventos." },
+      { property: "og:image", content: "https://criaker.lovable.app/assets/logo-final-criaker.png" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "https://criaker.lovable.app/assets/logo-final-criaker.png" },
       { name: "twitter:site", content: "@criaker" },
     ],
     links: [
