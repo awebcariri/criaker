@@ -4,11 +4,11 @@ export const REVIEWS_URL = "https://share.google/hIJnLf6iqNp5hjBEE";
 
 export const services = [
   { icon: "target", title: "Planejamento Estratégico", video: "/assets/video-covers/Planejamento_Estrategico.mp4?v=1", videoMobile: "/assets/video-covers/Planejamento_Estrategico.mp4?v=1", poster: "" },
+  { icon: "award", title: "Posicionamento Digital", video: "/assets/video-covers/Performance_Digital.mp4?v=1", videoMobile: "/assets/video-covers/Performance_Digital.mp4?v=1", poster: "" },
   { icon: "rocket", title: "Criação & Branding", video: "/assets/video-covers/Designer_grafico.mp4?v=1", videoMobile: "/assets/video-covers/Designer_grafico.mp4?v=1", poster: "" },
   { icon: "video", title: "Produção de Vídeos", video: "/assets/video-covers/Videomaker.mp4?v=1", videoMobile: "/assets/video-covers/Videomaker.mp4?v=1", poster: "" },
-  { icon: "calendar", title: "Gestão de Eventos", video: "/assets/video-covers/Gestao_de_Eventos.mp4?v=1", videoMobile: "/assets/video-covers/Gestao_de_Eventos.mp4?v=1", poster: "" },
-  { icon: "award", title: "Performance Digital", video: "/assets/video-covers/Performance_Digital.mp4?v=1", videoMobile: "/assets/video-covers/Performance_Digital.mp4?v=1", poster: "" },
   { icon: "mic", title: "Ações de Impacto", video: "/assets/video-covers/Acoes.mp4", videoMobile: "/assets/video-covers/Acoes.mp4", poster: "" },
+  { icon: "calendar", title: "Gestão de Eventos", video: "/assets/video-covers/Gestao_de_Eventos.mp4?v=1", videoMobile: "/assets/video-covers/Gestao_de_Eventos.mp4?v=1", poster: "" },
 ] as const;
 
 export type Client = { name: string; since: number; logo: string; description: string; instagram?: string };
