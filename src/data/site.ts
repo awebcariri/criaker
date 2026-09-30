@@ -8,7 +8,7 @@ export const services = [
   { icon: "video", title: "Produção de Vídeos", video: "/assets/video-covers/Videomaker.mp4?v=1", videoMobile: "/assets/video-covers/Videomaker.mp4?v=1", poster: "" },
   { icon: "calendar", title: "Gestão de Eventos", video: "/assets/video-covers/Gestao_de_Eventos.mp4?v=1", videoMobile: "/assets/video-covers/Gestao_de_Eventos.mp4?v=1", poster: "" },
   { icon: "award", title: "Performance Digital", video: "/assets/video-covers/Performance_Digital.mp4?v=1", videoMobile: "/assets/video-covers/Performance_Digital.mp4?v=1", poster: "" },
-  { icon: "mic", title: "Ações de Impacto", video: "/assets/video-covers/Acoes_de_Impacto.mp4?v=3", videoMobile: "/assets/video-covers/Acoes_de_Impacto.mp4?v=3", poster: "" },
+  { icon: "mic", title: "Ações de Impacto", video: "/assets/video-covers/Acoes.mp4", videoMobile: "/assets/video-covers/Acoes.mp4", poster: "" },
 ] as const;
 
 export type Client = { name: string; since: number; logo: string; description: string; instagram?: string };
