@@ -8,6 +8,8 @@ export function ServiceCard({ service }: { service: (typeof services)[number] })
   const containerRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
 
+  const [near, setNear] = useState(false);
+  const [active, setActive] = useState(false);
   const [lightSource, setLightSource] = useState(true);
   const Icon = icons[service.icon];
 
@@ -19,8 +21,28 @@ export function ServiceCard({ service }: { service: (typeof services)[number] })
     setLightSource(narrow || slow);
   }, []);
 
+  useEffect(() => {
+    const node = containerRef.current;
+    if (!node) return;
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      if (!entry) return;
+      setNear(entry.isIntersecting);
+      setActive(entry.isIntersecting);
+    }, { rootMargin: "200px 0px" });
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
 
-
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+    if (!active) {
+      video.pause();
+      return;
+    }
+    video.play().catch(() => {});
+  }, [active, near]);
   return (
     <article>
       <div ref={containerRef} className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border bg-card sm:aspect-[3/4]">
