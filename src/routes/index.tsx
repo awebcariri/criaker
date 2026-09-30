@@ -12,9 +12,9 @@ export const Route = createFileRoute("/")({
   component: HomePage,
   head: () => ({
     meta: [
-      { title: "Criaker | Especialistas em Posicionamento de Marcas" },
-      { name: "description", content: "Há quase 10 anos, a Criaker posiciona marcas para além do digital com estratégia, criação, vídeos, eventos e resultados." },
-      { property: "og:title", content: "Criaker | Especialistas em Posicionamento de Marcas" },
+      { title: "CriAker | Especialistas em Posicionamento de Marcas" },
+      { name: "description", content: "Há quase 10 anos, a CriAker posiciona marcas para além do digital com estratégia, criação, vídeos, eventos e resultados." },
+      { property: "og:title", content: "CriAker | Especialistas em Posicionamento de Marcas" },
       { property: "og:description", content: "Estratégia, criação e resultados para marcas que querem ser referência." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://criaker.lovable.app/" },
@@ -63,7 +63,7 @@ function Journey() {
         <SmartImage
           src="/assets/jornada-diretoras.webp"
           smallSrc="/assets/jornada-diretoras-480.webp"
-          alt="Társila Santana e Rita Soares, CEO e diretoras da Criaker, no jardim da agência"
+          alt="Társila Santana e Rita Soares, CEO e diretoras da CriAker, no jardim da agência"
           sizes="(min-width: 1024px) 45vw, 90vw"
           wrapperClassName="overflow-hidden rounded-3xl border border-border/60"
           className="h-full w-full object-cover"

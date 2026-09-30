@@ -9,9 +9,9 @@ export const Route = createFileRoute("/equipe")({
   component: EquipePage,
   head: () => ({
     meta: [
-      { title: "Equipe | Criaker" },
-      { name: "description", content: "Conheça as diretoras e os especialistas que unem visão, estratégia e execução na Criaker." },
-      { property: "og:title", content: "Equipe | Criaker" },
+      { title: "Equipe | CriAker" },
+      { name: "description", content: "Conheça as diretoras e os especialistas que unem visão, estratégia e execução na CriAker." },
+      { property: "og:title", content: "Equipe | CriAker" },
       { property: "og:description", content: "Estratégia, comunicação, design e vídeo: quem faz o posicionamento acontecer." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

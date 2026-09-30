@@ -45,7 +45,7 @@ export function CTASection() {
           Sua marca está pronta para ser <span className="italic text-primary">referência</span>?
         </h2>
         <p className="mx-auto my-8 max-w-2xl font-subtitle text-base leading-relaxed text-muted-foreground sm:text-xl">
-          A Criaker transforma potencial em autoridade. O próximo nível começa com um clique.
+          A CriAker transforma potencial em autoridade. O próximo nível começa com um clique.
         </p>
         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
           <Button asChild size="lg" className="glow-primary min-h-14 w-full rounded-full px-10 text-base font-bold sm:w-auto">

@@ -8,9 +8,9 @@ export const Route = createFileRoute("/clientes")({
   component: ClientesPage,
   head: () => ({
     meta: [
-      { title: "Clientes | Criaker" },
-      { name: "description", content: "Conheça as marcas que constroem posicionamento e resultados ao lado da Criaker, algumas desde 2021." },
-      { property: "og:title", content: "Clientes | Criaker" },
+      { title: "Clientes | CriAker" },
+      { name: "description", content: "Conheça as marcas que constroem posicionamento e resultados ao lado da CriAker, algumas desde 2021." },
+      { property: "og:title", content: "Clientes | CriAker" },
       { property: "og:description", content: "Parcerias de anos com marcas que se posicionam no Cariri e além." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -26,7 +26,7 @@ function ClientesPage() {
         eyebrow="Parcerias que ocupam espaço"
         title="Nossos"
         accent="clientes."
-        copy="Marcas que confiam em posicionamento consistente e constroem resultados ao lado da Criaker."
+        copy="Marcas que confiam em posicionamento consistente e constroem resultados ao lado da CriAker."
       />
       <section className="bg-card/20 px-5 py-16 sm:px-8 sm:py-24">
         <div className="mx-auto max-w-7xl">
@@ -36,7 +36,7 @@ function ClientesPage() {
               Quem vive a parceria <span className="italic text-primary">conta.</span>
             </h2>
             <p className="mt-6 max-w-xl font-subtitle text-base leading-relaxed text-muted-foreground sm:text-lg">
-              Depoimentos reais de empresas que constroem posicionamento ao lado da Criaker.
+              Depoimentos reais de empresas que constroem posicionamento ao lado da CriAker.
             </p>
           </header>
           <TestimonialCarousel />

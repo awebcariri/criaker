@@ -75,7 +75,7 @@ export function SpecialistCarousel({ members }: SpecialistCarouselProps) {
         </div>
       </div>
 
-      <Carousel setApi={setApi} opts={{ align: "start", duration: 28 }} aria-label="Especialistas da Criaker">
+      <Carousel setApi={setApi} opts={{ align: "start", duration: 28 }} aria-label="Especialistas da CriAker">
         <CarouselContent className="-ml-0">
           {members.map((member, index) => (
             <CarouselItem key={member.name} className="pl-0" aria-label={`${index + 1} de ${members.length}: ${member.name}`}>

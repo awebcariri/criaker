@@ -41,8 +41,8 @@ export function Navbar() {
   return (
     <nav aria-label="Navegação principal" className={`glass fixed inset-x-0 top-0 z-50 border-b border-border px-4 py-3 transition-transform duration-300 sm:px-8 sm:py-4 lg:translate-y-0 ${hidden ? "-translate-y-full" : "translate-y-0"}`}>
       <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 lg:grid-cols-[auto_1fr_auto]">
-        <Link to="/" aria-label="Início — Criaker" className={`flex h-12 min-w-0 items-center overflow-hidden sm:h-14 ${focus}`}>
-          <img src={LOGO} alt="Criaker" width="640" height="456" className="h-full w-auto object-contain" />
+        <Link to="/" aria-label="Início — CriAker" className={`flex h-12 min-w-0 items-center overflow-hidden sm:h-14 ${focus}`}>
+          <img src={LOGO} alt="CriAker" width="640" height="456" className="h-full w-auto object-contain" />
         </Link>
         <div className="hidden items-center justify-center gap-8 lg:flex">
           {links.map((link) => (
@@ -67,7 +67,7 @@ export function Navbar() {
           <Button asChild className="hidden rounded-full px-6 lg:inline-flex">
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">Fale conosco</a>
           </Button>
-          <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label="Instagram da Criaker" className={`hidden min-h-11 min-w-11 items-center justify-center rounded-full border border-border hover:border-primary hover:text-primary lg:flex ${focus}`}>
+          <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label="Instagram da CriAker" className={`hidden min-h-11 min-w-11 items-center justify-center rounded-full border border-border hover:border-primary hover:text-primary lg:flex ${focus}`}>
             <Instagram aria-hidden="true" className="size-5" />
           </a>
         </div>

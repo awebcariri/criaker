@@ -7,9 +7,9 @@ export const Route = createFileRoute("/servicos")({
   component: ServicosPage,
   head: () => ({
     meta: [
-      { title: "Serviços | Criaker" },
+      { title: "Serviços | CriAker" },
       { name: "description", content: "Planejamento estratégico, criação e branding, produção de vídeos, eventos, performance digital e ações de impacto." },
-      { property: "og:title", content: "Serviços | Criaker" },
+      { property: "og:title", content: "Serviços | CriAker" },
       { property: "og:description", content: "Soluções de alto impacto para marcas que querem ocupar espaço no mercado." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

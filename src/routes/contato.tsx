@@ -8,9 +8,9 @@ export const Route = createFileRoute("/contato")({
   component: ContatoPage,
   head: () => ({
     meta: [
-      { title: "Contato | Criaker" },
-      { name: "description", content: "Fale com a Criaker por WhatsApp, e-mail ou Instagram. Juazeiro do Norte, CE." },
-      { property: "og:title", content: "Contato | Criaker" },
+      { title: "Contato | CriAker" },
+      { name: "description", content: "Fale com a CriAker por WhatsApp, e-mail ou Instagram. Juazeiro do Norte, CE." },
+      { property: "og:title", content: "Contato | CriAker" },
       { property: "og:description", content: "Vamos conversar sobre o posicionamento da sua marca." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -32,7 +32,7 @@ function ContatoPage() {
       <PageHero
         eyebrow="Vamos conversar"
         title="Fale com a"
-        accent="Criaker."
+        accent="CriAker."
         copy="Conte o desafio da sua marca. Respondemos rápido e já saímos do primeiro contato com direção."
       />
       <section className="bg-background px-5 py-12 sm:px-8 sm:py-20">

@@ -6,9 +6,9 @@ export const Route = createFileRoute("/pacotes")({
   component: PacotesPage,
   head: () => ({
     meta: [
-      { title: "Pacotes | Criaker" },
+      { title: "Pacotes | CriAker" },
       { name: "description", content: "Três formatos de parceria — Start, Pro e Master. A CriAker tem a estrutura certa para acompanhar sua marca em cada momento." },
-      { property: "og:title", content: "Pacotes | Criaker" },
+      { property: "og:title", content: "Pacotes | CriAker" },
       { property: "og:description", content: "Três formatos de parceria. Uma mesma missão: fazer sua marca avançar." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
