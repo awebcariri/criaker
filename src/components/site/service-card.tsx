@@ -46,17 +46,21 @@ export function ServiceCard({ service }: { service: (typeof services)[number] })
   return (
     <article>
       <div ref={containerRef} className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border bg-card sm:aspect-[3/4]">
-        <video
-          ref={videoRef}
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster={service.poster}
-          className="size-full bg-card object-cover"
-          aria-label={`Vídeo: ${service.title}`}
-          src={lightSource ? service.videoMobile : service.video}
-        />
+        {service.video || service.videoMobile ? (
+          <video
+            ref={videoRef}
+            autoPlay
+            muted
+            loop
+            playsInline
+            poster={service.poster}
+            className="size-full bg-card object-cover"
+            aria-label={`Vídeo: ${service.title}`}
+            src={lightSource ? service.videoMobile : service.video}
+          />
+        ) : (
+          <img src={service.poster} alt={service.title} className="size-full bg-card object-cover" />
+        )}
       </div>
       <div className="mt-4 flex items-center gap-3 px-1">
         {Icon && <Icon aria-hidden="true" className="size-5 shrink-0 text-primary" />}
