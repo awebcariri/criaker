@@ -27,8 +27,8 @@ export function ServiceCard({ service }: { service: (typeof services)[number] })
       const entry = entries[0];
       if (!entry) return;
       setNear(entry.isIntersecting);
-      setActive(entry.isIntersecting && entry.intersectionRatio >= 0.55);
-    }, { rootMargin: "180px 0px", threshold: [0, 0.55] });
+      setActive(entry.isIntersecting);
+    }, { rootMargin: "200px 0px" });
     observer.observe(node);
     return () => observer.disconnect();
   }, []);
