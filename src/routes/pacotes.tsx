@@ -21,17 +21,14 @@ const packages = [
   {
     name: "Start",
     description: "Para marcas que estão começando a estruturar sua presença e precisam de direção para dar os primeiros passos com estratégia.",
-    featured: false,
   },
   {
     name: "Pro",
     description: "Para marcas que já estão em movimento e querem uma comunicação mais estratégica, consistente e profissional.",
-    featured: true,
   },
   {
     name: "Master",
     description: "Para marcas que querem uma atuação completa da CriAker, unindo estratégia, criatividade e execução para potencializar seu posicionamento.",
-    featured: false,
   },
 ] as const;
 
@@ -53,13 +50,11 @@ function PacotesPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
-              className={`relative flex flex-col rounded-3xl border p-8 sm:p-10 ${
-                pkg.featured ? "border-primary/60 bg-card/60" : "border-border bg-card/40"
-              }`}
+              className="relative flex flex-col rounded-3xl border border-primary/60 bg-card/60 p-8 sm:p-10"
             >
               <p className="font-subtitle text-xs font-bold uppercase tracking-[0.2em] text-primary">Pacote 0{i + 1}</p>
               <h2 className="mt-4 text-4xl font-bold uppercase tracking-wide sm:text-5xl">{pkg.name}</h2>
-              <span aria-hidden="true" className={`mt-6 h-px w-full ${pkg.featured ? "bg-primary/60" : "bg-border"}`} />
+              <span aria-hidden="true" className="mt-6 h-px w-full bg-primary/60" />
               <p className="mt-6 font-subtitle text-base leading-relaxed text-muted-foreground">{pkg.description}</p>
             </motion.article>
           ))}
