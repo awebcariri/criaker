@@ -82,14 +82,28 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1, viewport-fit=cover" },
       { title: "CriAker | Agência Líder em Posicionamento de Marcas" },
-      { name: "description", content: "Agência líder há 7 anos em posicionar marcas. Criação, Estratégia e Resultados. Planejamento, Vídeos e Eventos." },
+      {
+        name: "description",
+        content:
+          "Agência líder há 7 anos em posicionar marcas. Criação, Estratégia e Resultados. Planejamento, Vídeos e Eventos.",
+      },
       { name: "author", content: "CriAker" },
       { property: "og:title", content: "CriAker | Agência Líder em Posicionamento de Marcas" },
-      { property: "og:description", content: "Agência líder há 7 anos em posicionar marcas. Criação, Estratégia e Resultados. Planejamento, Vídeos e Eventos." },
-      { property: "og:image", content: "https://criaker-vert.vercel.app/assets/logo-final-criaker.png" },
+      {
+        property: "og:description",
+        content:
+          "Agência líder há 7 anos em posicionar marcas. Criação, Estratégia e Resultados. Planejamento, Vídeos e Eventos.",
+      },
+      {
+        property: "og:image",
+        content: "https://criaker-vert.vercel.app/assets/logo-final-criaker.png",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: "https://criaker-vert.vercel.app/assets/logo-final-criaker.png" },
+      {
+        name: "twitter:image",
+        content: "https://criaker-vert.vercel.app/assets/logo-final-criaker.png",
+      },
       { name: "twitter:site", content: "@criaker" },
     ],
     links: [
@@ -147,7 +161,10 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <div className="min-h-screen overflow-x-hidden bg-background font-sans text-foreground antialiased selection:bg-primary selection:text-primary-foreground">
-        <a href="#conteudo" className="fixed left-4 top-3 z-[60] -translate-y-20 rounded-md bg-primary px-4 py-3 font-subtitle font-bold text-primary-foreground transition-transform focus:translate-y-0">
+        <a
+          href="#conteudo"
+          className="fixed left-4 top-3 z-[60] -translate-y-20 rounded-md bg-primary px-4 py-3 font-subtitle font-bold text-primary-foreground transition-transform focus:translate-y-0"
+        >
           Pular para o conteúdo
         </a>
         <ScrollToTop />

@@ -8,9 +8,16 @@ export const Route = createFileRoute("/servicos")({
   head: () => ({
     meta: [
       { title: "Serviços | CriAker" },
-      { name: "description", content: "Planejamento estratégico, criação e branding, produção de vídeos, eventos, performance digital e ações de impacto." },
+      {
+        name: "description",
+        content:
+          "Planejamento estratégico, criação e branding, produção de vídeos, eventos, performance digital e ações de impacto.",
+      },
       { property: "og:title", content: "Serviços | CriAker" },
-      { property: "og:description", content: "Soluções de alto impacto para marcas que querem ocupar espaço no mercado." },
+      {
+        property: "og:description",
+        content: "Soluções de alto impacto para marcas que querem ocupar espaço no mercado.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -29,7 +36,9 @@ function ServicosPage() {
       />
       <section className="bg-background px-5 py-16 sm:px-8 sm:py-24">
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((service) => <ServiceCard key={service.title} service={service} />)}
+          {services.map((service) => (
+            <ServiceCard key={service.title} service={service} />
+          ))}
         </div>
       </section>
       <CTASection />

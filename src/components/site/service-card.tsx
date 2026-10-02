@@ -2,7 +2,14 @@ import { useEffect, useRef, useState, type ComponentType, type SVGProps } from "
 import { Award, Calendar, Mic, Rocket, Target, Video } from "lucide-react";
 import type { services } from "@/data/site";
 
-const icons: Record<string, ComponentType<SVGProps<SVGSVGElement>>> = { target: Target, rocket: Rocket, video: Video, calendar: Calendar, award: Award, mic: Mic };
+const icons: Record<string, ComponentType<SVGProps<SVGSVGElement>>> = {
+  target: Target,
+  rocket: Rocket,
+  video: Video,
+  calendar: Calendar,
+  award: Award,
+  mic: Mic,
+};
 
 export function ServiceCard({ service }: { service: (typeof services)[number] }) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -16,7 +23,9 @@ export function ServiceCard({ service }: { service: (typeof services)[number] })
   // Small screens and data-saver connections get the compressed video file.
   useEffect(() => {
     const narrow = window.matchMedia("(max-width: 1023px)").matches;
-    const connection = (navigator as Navigator & { connection?: { saveData?: boolean; effectiveType?: string } }).connection;
+    const connection = (
+      navigator as Navigator & { connection?: { saveData?: boolean; effectiveType?: string } }
+    ).connection;
     const slow = Boolean(connection?.saveData) || /2g|3g/.test(connection?.effectiveType ?? "");
     setLightSource(narrow || slow);
   }, []);
@@ -24,12 +33,15 @@ export function ServiceCard({ service }: { service: (typeof services)[number] })
   useEffect(() => {
     const node = containerRef.current;
     if (!node) return;
-    const observer = new IntersectionObserver((entries) => {
-      const entry = entries[0];
-      if (!entry) return;
-      setNear(entry.isIntersecting);
-      setActive(entry.isIntersecting);
-    }, { rootMargin: "200px 0px" });
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        if (!entry) return;
+        setNear(entry.isIntersecting);
+        setActive(entry.isIntersecting);
+      },
+      { rootMargin: "200px 0px" },
+    );
     observer.observe(node);
     return () => observer.disconnect();
   }, []);
@@ -45,7 +57,10 @@ export function ServiceCard({ service }: { service: (typeof services)[number] })
   }, [active, near]);
   return (
     <article>
-      <div ref={containerRef} className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border bg-card sm:aspect-[3/4]">
+      <div
+        ref={containerRef}
+        className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border bg-card sm:aspect-[3/4]"
+      >
         {service.video || service.videoMobile ? (
           <video
             ref={videoRef}
@@ -59,7 +74,11 @@ export function ServiceCard({ service }: { service: (typeof services)[number] })
             src={lightSource ? service.videoMobile : service.video}
           />
         ) : (
-          <img src={service.poster} alt={service.title} className="size-full bg-card object-cover" />
+          <img
+            src={service.poster}
+            alt={service.title}
+            className="size-full bg-card object-cover"
+          />
         )}
       </div>
       <div className="mt-4 flex items-center gap-3 px-1">

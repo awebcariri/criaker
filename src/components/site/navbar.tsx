@@ -1,7 +1,17 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { ExternalLink, Gem, Home, Instagram, MessageCircle, Sparkles, Users, UserRound, Menu } from "lucide-react";
+import {
+  ExternalLink,
+  Gem,
+  Home,
+  Instagram,
+  MessageCircle,
+  Sparkles,
+  Users,
+  UserRound,
+  Menu,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetHeader } from "@/components/ui/sheet";
 import { INSTAGRAM_URL, REVIEWS_URL, WHATSAPP_URL } from "@/data/site";
@@ -41,10 +51,23 @@ export function Navbar() {
   }, []);
 
   return (
-    <nav aria-label="Navegação principal" className={`glass fixed inset-x-0 top-0 z-50 border-b border-border px-4 py-3 transition-transform duration-300 sm:px-8 sm:py-4 lg:translate-y-0 ${hidden ? "-translate-y-full" : "translate-y-0"}`}>
+    <nav
+      aria-label="Navegação principal"
+      className={`glass fixed inset-x-0 top-0 z-50 border-b border-border px-4 py-3 transition-transform duration-300 sm:px-8 sm:py-4 lg:translate-y-0 ${hidden ? "-translate-y-full" : "translate-y-0"}`}
+    >
       <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 lg:grid-cols-[auto_1fr_auto]">
-        <Link to="/" aria-label="Início — CriAker" className={`flex h-12 min-w-0 items-center overflow-hidden sm:h-14 ${focus}`}>
-          <img src={LOGO} alt="CriAker" width="640" height="456" className="h-full w-auto object-contain" />
+        <Link
+          to="/"
+          aria-label="Início — CriAker"
+          className={`flex h-12 min-w-0 items-center overflow-hidden sm:h-14 ${focus}`}
+        >
+          <img
+            src={LOGO}
+            alt="CriAker"
+            width="640"
+            height="456"
+            className="h-full w-auto object-contain"
+          />
         </Link>
 
         {/* Desktop Links */}
@@ -59,11 +82,20 @@ export function Navbar() {
             >
               {link.label}
               {pathname.startsWith(link.to) && (
-                <motion.span layoutId="desktop-nav-underline" className="absolute inset-x-0 -bottom-1 h-0.5 rounded-full bg-primary" transition={{ type: "spring", stiffness: 420, damping: 34 }} />
+                <motion.span
+                  layoutId="desktop-nav-underline"
+                  className="absolute inset-x-0 -bottom-1 h-0.5 rounded-full bg-primary"
+                  transition={{ type: "spring", stiffness: 420, damping: 34 }}
+                />
               )}
             </Link>
           ))}
-          <a href={REVIEWS_URL} target="_blank" rel="noopener noreferrer" className={`flex items-center gap-1 font-subtitle text-sm font-semibold hover:text-primary ${focus}`}>
+          <a
+            href={REVIEWS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`flex items-center gap-1 font-subtitle text-sm font-semibold hover:text-primary ${focus}`}
+          >
             Avaliações <ExternalLink aria-hidden="true" className="size-3" />
           </a>
         </div>
@@ -71,12 +103,20 @@ export function Navbar() {
         {/* Desktop Right Side + Mobile Hamburger */}
         <div className="flex shrink-0 items-center gap-2">
           <Button asChild className="hidden rounded-full px-6 lg:inline-flex">
-            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">Fale conosco</a>
+            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+              Fale conosco
+            </a>
           </Button>
-          <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label="Instagram da CriAker" className={`hidden min-h-11 min-w-11 items-center justify-center rounded-full border border-border hover:border-primary hover:text-primary lg:flex ${focus}`}>
+          <a
+            href={INSTAGRAM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram da CriAker"
+            className={`hidden min-h-11 min-w-11 items-center justify-center rounded-full border border-border hover:border-primary hover:text-primary lg:flex ${focus}`}
+          >
             <Instagram aria-hidden="true" className="size-5" />
           </a>
-          
+
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="lg:hidden" aria-label="Menu principal">
@@ -98,15 +138,27 @@ export function Navbar() {
                     {link.label}
                   </Link>
                 ))}
-                <a href={REVIEWS_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-lg font-semibold hover:text-primary">
+                <a
+                  href={REVIEWS_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-lg font-semibold hover:text-primary"
+                >
                   Avaliações <ExternalLink aria-hidden="true" className="size-4" />
                 </a>
               </div>
               <div className="mt-auto flex flex-col gap-4 pb-8">
                 <Button asChild className="w-full rounded-full">
-                  <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">Fale conosco</a>
+                  <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                    Fale conosco
+                  </a>
                 </Button>
-                <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary">
+                <a
+                  href={INSTAGRAM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary"
+                >
                   <Instagram aria-hidden="true" className="size-5" /> Siga no Instagram
                 </a>
               </div>

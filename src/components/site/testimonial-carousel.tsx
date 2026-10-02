@@ -68,10 +68,17 @@ export function TestimonialCarousel() {
         </div>
       </div>
 
-      <Carousel setApi={setApi} opts={{ align: "start", duration: 28 }} aria-label="Depoimentos de clientes">
+      <Carousel
+        setApi={setApi}
+        opts={{ align: "start", duration: 28 }}
+        aria-label="Depoimentos de clientes"
+      >
         <CarouselContent className="-ml-4">
           {testimonials.map((testimonial) => (
-            <CarouselItem key={testimonial.video} className="basis-[82%] pl-4 sm:basis-1/2 lg:basis-1/3">
+            <CarouselItem
+              key={testimonial.video}
+              className="basis-[82%] pl-4 sm:basis-1/2 lg:basis-1/3"
+            >
               <TestimonialVideoCard testimonial={testimonial} />
             </CarouselItem>
           ))}

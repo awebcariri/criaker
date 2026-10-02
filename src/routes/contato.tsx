@@ -9,9 +9,15 @@ export const Route = createFileRoute("/contato")({
   head: () => ({
     meta: [
       { title: "Contato | CriAker" },
-      { name: "description", content: "Fale com a CriAker por WhatsApp, e-mail ou Instagram. Juazeiro do Norte, CE." },
+      {
+        name: "description",
+        content: "Fale com a CriAker por WhatsApp, e-mail ou Instagram. Juazeiro do Norte, CE.",
+      },
       { property: "og:title", content: "Contato | CriAker" },
-      { property: "og:description", content: "Vamos conversar sobre o posicionamento da sua marca." },
+      {
+        property: "og:description",
+        content: "Vamos conversar sobre o posicionamento da sua marca.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -20,10 +26,28 @@ export const Route = createFileRoute("/contato")({
 });
 
 const channels = [
-  { icon: MessageCircle, label: "WhatsApp", value: "+55 (88) 99203-9906", href: WHATSAPP_URL, external: true },
-  { icon: Mail, label: "E-mail", value: "criaker@criaker.com.br", href: "mailto:criaker@criaker.com.br", external: false },
+  {
+    icon: MessageCircle,
+    label: "WhatsApp",
+    value: "+55 (88) 99203-9906",
+    href: WHATSAPP_URL,
+    external: true,
+  },
+  {
+    icon: Mail,
+    label: "E-mail",
+    value: "criaker@criaker.com.br",
+    href: "mailto:criaker@criaker.com.br",
+    external: false,
+  },
   { icon: Instagram, label: "Instagram", value: "@criaker", href: INSTAGRAM_URL, external: true },
-  { icon: Star, label: "Avaliações no Google", value: "Ver o que dizem sobre nós", href: REVIEWS_URL, external: true },
+  {
+    icon: Star,
+    label: "Avaliações no Google",
+    value: "Ver o que dizem sobre nós",
+    href: REVIEWS_URL,
+    external: true,
+  },
 ];
 
 function ContatoPage() {
@@ -49,10 +73,16 @@ function ContatoPage() {
                     <channel.icon aria-hidden="true" className="size-4 sm:size-5" />
                   </span>
                   <span className="min-w-0 flex-1">
-                    <span className="block font-subtitle text-[10px] font-bold uppercase tracking-[0.16em] text-muted-foreground sm:text-xs">{channel.label}</span>
-                    <span className="block truncate font-subtitle text-sm font-bold sm:text-base">{channel.value}</span>
+                    <span className="block font-subtitle text-[10px] font-bold uppercase tracking-[0.16em] text-muted-foreground sm:text-xs">
+                      {channel.label}
+                    </span>
+                    <span className="block truncate font-subtitle text-sm font-bold sm:text-base">
+                      {channel.value}
+                    </span>
                   </span>
-                  {channel.external && <ExternalLink aria-hidden="true" className="size-4 shrink-0 text-primary" />}
+                  {channel.external && (
+                    <ExternalLink aria-hidden="true" className="size-4 shrink-0 text-primary" />
+                  )}
                 </a>
               </li>
             ))}
@@ -63,8 +93,14 @@ function ContatoPage() {
               <MapPin aria-hidden="true" className="mt-0.5 size-4 shrink-0 text-primary" />
               Juazeiro do Norte, Ceará — atendendo marcas de todo o Brasil.
             </p>
-            <Button asChild size="lg" className="glow-primary mt-6 min-h-13 w-full rounded-full text-sm font-bold sm:text-base">
-              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">Começar agora no WhatsApp</a>
+            <Button
+              asChild
+              size="lg"
+              className="glow-primary mt-6 min-h-13 w-full rounded-full text-sm font-bold sm:text-base"
+            >
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                Começar agora no WhatsApp
+              </a>
             </Button>
           </div>
         </div>

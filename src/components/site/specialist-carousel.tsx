@@ -75,10 +75,18 @@ export function SpecialistCarousel({ members }: SpecialistCarouselProps) {
         </div>
       </div>
 
-      <Carousel setApi={setApi} opts={{ align: "start", duration: 28 }} aria-label="Especialistas da CriAker">
+      <Carousel
+        setApi={setApi}
+        opts={{ align: "start", duration: 28 }}
+        aria-label="Especialistas da CriAker"
+      >
         <CarouselContent className="-ml-0">
           {members.map((member, index) => (
-            <CarouselItem key={member.name} className="pl-0" aria-label={`${index + 1} de ${members.length}: ${member.name}`}>
+            <CarouselItem
+              key={member.name}
+              className="pl-0"
+              aria-label={`${index + 1} de ${members.length}: ${member.name}`}
+            >
               <article className="grid overflow-hidden rounded-2xl border border-border bg-card/35 md:grid-cols-[minmax(17rem,0.78fr)_minmax(0,1.22fr)]">
                 <div className="relative aspect-[4/3] min-h-0 overflow-hidden md:aspect-auto md:min-h-[34rem]">
                   <SmartImage
@@ -92,12 +100,21 @@ export function SpecialistCarousel({ members }: SpecialistCarouselProps) {
                     wrapperClassName="absolute inset-0 size-full"
                     className="absolute inset-0 size-full object-cover duration-700 ease-out hover:scale-[1.025]"
                   />
-                  <span aria-hidden="true" className="absolute inset-x-0 bottom-0 h-16 bg-linear-to-t from-card to-transparent md:hidden" />
+                  <span
+                    aria-hidden="true"
+                    className="absolute inset-x-0 bottom-0 h-16 bg-linear-to-t from-card to-transparent md:hidden"
+                  />
                 </div>
                 <div className="flex min-w-0 flex-col justify-center p-6 sm:p-9 md:p-12 lg:p-14">
-                  <p className="font-subtitle text-xs font-bold uppercase tracking-[0.16em] text-primary">{member.role}</p>
+                  <p className="font-subtitle text-xs font-bold uppercase tracking-[0.16em] text-primary">
+                    {member.role}
+                  </p>
                   <h3 className="mt-3 text-3xl font-bold sm:text-4xl lg:text-5xl">{member.name}</h3>
-                  {member.quote && <p className="mt-6 font-subtitle text-lg font-semibold italic leading-relaxed sm:text-xl">“{member.quote}”</p>}
+                  {member.quote && (
+                    <p className="mt-6 font-subtitle text-lg font-semibold italic leading-relaxed sm:text-xl">
+                      “{member.quote}”
+                    </p>
+                  )}
                   {member.bio && <ExpandableText text={member.bio} className="mt-4 max-w-2xl" />}
                 </div>
               </article>

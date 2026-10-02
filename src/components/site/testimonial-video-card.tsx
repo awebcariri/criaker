@@ -10,7 +10,7 @@ export function TestimonialVideoCard({ testimonial }: { testimonial: Testimonial
   const toggle = () => {
     const video = videoRef.current;
     if (!video) return;
-    
+
     if (video.paused) {
       const playPromise = video.play();
       if (playPromise !== undefined) {
@@ -34,13 +34,16 @@ export function TestimonialVideoCard({ testimonial }: { testimonial: Testimonial
         playsInline
         controls={playing}
         onClick={playing ? undefined : toggle}
-        onPlay={() => { setPlaying(true); setError(false); }}
+        onPlay={() => {
+          setPlaying(true);
+          setError(false);
+        }}
         onPause={() => setPlaying(false)}
         onEnded={() => setPlaying(false)}
         aria-label={`Depoimento de ${testimonial.title}`}
         className="size-full bg-background object-contain"
       />
-      
+
       {!playing && (
         <button
           type="button"
@@ -55,7 +58,7 @@ export function TestimonialVideoCard({ testimonial }: { testimonial: Testimonial
             <MessageCircle aria-hidden="true" className="size-3.5" /> {testimonial.kind}
           </span>
           <h3 className="text-2xl font-bold sm:text-3xl">{testimonial.title}</h3>
-          
+
           {error && (
             <p className="mt-2 text-xs text-red-500 font-bold bg-background/80 p-1 rounded">
               Formato de vídeo não suportado pelo seu navegador.

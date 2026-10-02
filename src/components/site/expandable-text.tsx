@@ -5,7 +5,11 @@ export function ExpandableText({ text, className = "" }: { text: string; classNa
   const [open, setOpen] = useState(false);
   return (
     <div className={className}>
-      <p className={`font-subtitle text-sm leading-relaxed text-muted-foreground sm:text-base ${open ? "" : "line-clamp-3 lg:line-clamp-none"}`}>{text}</p>
+      <p
+        className={`font-subtitle text-sm leading-relaxed text-muted-foreground sm:text-base ${open ? "" : "line-clamp-3 lg:line-clamp-none"}`}
+      >
+        {text}
+      </p>
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
