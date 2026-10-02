@@ -50,7 +50,7 @@ function PacotesPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
-              className="relative flex flex-col rounded-3xl border border-primary/60 bg-card/60 p-8 sm:p-10"
+              className="relative flex flex-col rounded-3xl border border-primary bg-card/60 p-8 sm:p-10"
             >
               <p className="font-subtitle text-xs font-bold uppercase tracking-[0.2em] text-primary">Pacote 0{i + 1}</p>
               <h2 className="mt-4 text-4xl font-bold uppercase tracking-wide sm:text-5xl">{pkg.name}</h2>

@@ -3,7 +3,7 @@ export const INSTAGRAM_URL = "https://www.instagram.com/criaker/";
 export const REVIEWS_URL = "https://share.google/hIJnLf6iqNp5hjBEE";
 
 export const services = [
-  { icon: "target", title: "Planejamento Estratégico", video: "/assets/video-covers/Planejamento_Estrategico.mp4?v=3", videoMobile: "/assets/video-covers/Planejamento_Estrategico.mp4?v=3", poster: "" },
+  { icon: "target", title: "Planejamento Estratégico", video: "/assets/video-covers/Planejamento_Estrategico.MOV", videoMobile: "/assets/video-covers/Planejamento_Estrategico.MOV", poster: "" },
   { icon: "award", title: "Posicionamento Digital", video: "/assets/video-covers/Performance_Digital.mp4?v=2", videoMobile: "/assets/video-covers/Performance_Digital.mp4?v=2", poster: "" },
   { icon: "rocket", title: "Criação & Branding", video: "/assets/video-covers/Designer_grafico.mp4?v=2", videoMobile: "/assets/video-covers/Designer_grafico.mp4?v=2", poster: "" },
   { icon: "video", title: "Produção de Vídeos", video: "/assets/video-covers/Videomaker.mp4?v=2", videoMobile: "/assets/video-covers/Videomaker.mp4?v=2", poster: "" },
