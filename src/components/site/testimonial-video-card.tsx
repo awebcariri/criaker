@@ -30,7 +30,7 @@ export function TestimonialVideoCard({ testimonial }: { testimonial: Testimonial
         ref={videoRef}
         src={testimonial.video}
         poster={testimonial.poster}
-        preload="metadata"
+        preload="none"
         playsInline
         controls={playing}
         onClick={playing ? undefined : toggle}

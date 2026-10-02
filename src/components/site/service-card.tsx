@@ -64,14 +64,15 @@ export function ServiceCard({ service }: { service: (typeof services)[number] })
         {service.video || service.videoMobile ? (
           <video
             ref={videoRef}
-            autoPlay
             muted
             loop
             playsInline
+            preload="none"
             poster={service.poster}
-            className="size-full bg-card object-cover"
+            className="size-full bg-card object-cover transition-opacity duration-700"
+            style={{ opacity: active ? 1 : 0 }}
             aria-label={`Vídeo: ${service.title}`}
-            src={lightSource ? service.videoMobile : service.video}
+            src={near ? (lightSource ? service.videoMobile : service.video) : undefined}
           />
         ) : (
           <img
