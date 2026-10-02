@@ -96,13 +96,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       {
         property: "og:image",
-        content: "https://criaker-vert.vercel.app/assets/logo-final-criaker.png",
+        content: "https://criaker.lovable.app/assets/logo-final-criaker.png?v=3",
       },
+      { property: "og:image:type", content: "image/png" },
+      { property: "og:image:alt", content: "Logo CriAker" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       {
         name: "twitter:image",
-        content: "https://criaker-vert.vercel.app/assets/logo-final-criaker.png",
+        content: "https://criaker.lovable.app/assets/logo-final-criaker.png?v=3",
       },
       { name: "twitter:site", content: "@criaker" },
     ],
