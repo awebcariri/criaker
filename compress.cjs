@@ -29,9 +29,9 @@ async function compressVideo(filePath) {
     ffmpeg(absolutePath)
       .outputOptions([
         '-c:v libx264',
-        '-crf 28',         // Compress aggressively (default is 23)
-        '-preset fast',    // Balance between speed and compression
-        '-vf scale=-2:720' // Resize height to 720p, preserve aspect ratio
+        '-crf 24',         // Better quality than 28
+        '-preset fast',
+        '-vf scale=-2:1080' // Keep it at 1080p for sharpness
       ])
       .save(tempPath)
       .on('end', () => {
