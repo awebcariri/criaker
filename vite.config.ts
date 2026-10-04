@@ -4,11 +4,5 @@ export default defineConfig({
   plugins: [],
   tanstackStart: {
     server: { entry: "server" },
-    prerender: {
-      enabled: true,
-      crawlLinks: true,
-      failOnError: true,
-    },
   },
-  nitro: false,
 });
