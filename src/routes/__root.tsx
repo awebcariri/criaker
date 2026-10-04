@@ -95,16 +95,29 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Agência líder há 7 anos em posicionar marcas. Criação, Estratégia e Resultados. Planejamento, Vídeos e Eventos.",
       },
       {
-        property: "og:image",
-        content: "https://criaker.lovable.app/assets/logo-final-criaker.png?v=3",
+        property: "og:url",
+        content: "https://www.criaker.com.br/",
       },
+      {
+        property: "og:image",
+        content: "https://www.criaker.com.br/assets/logo-final-criaker.png",
+      },
+      { property: "og:image:secure_url", content: "https://www.criaker.com.br/assets/logo-final-criaker.png" },
       { property: "og:image:type", content: "image/png" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
       { property: "og:image:alt", content: "Logo CriAker" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "CriAker | Agência Líder em Posicionamento de Marcas" },
+      {
+        name: "twitter:description",
+        content:
+          "Agência líder há 7 anos em posicionar marcas. Criação, Estratégia e Resultados. Planejamento, Vídeos e Eventos.",
+      },
       {
         name: "twitter:image",
-        content: "https://criaker.lovable.app/assets/logo-final-criaker.png?v=3",
+        content: "https://www.criaker.com.br/assets/logo-final-criaker.png",
       },
       { name: "twitter:site", content: "@criaker" },
     ],
