@@ -32,7 +32,3 @@ dist-ssr
 *.sw?
 criaker-uol.zip
 
-# Large Video Files
-public/assets/video-covers/Designer_grafico.mp4
-public/assets/video-covers/Gestao_de_Eventos.mp4
-public/assets/video-covers/Planejamento_Estrategico.MOV
